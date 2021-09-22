@@ -21,6 +21,7 @@
         </div>
       </template>
     </Card>
+    <router-link to="/register/">register</router-link>
   </div>
 </template>
 
