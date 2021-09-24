@@ -3,6 +3,7 @@
     <Card>
       <template #content>
         {{user.name}}
+        <UserTopics />
       </template>
     </Card>
   </div>
@@ -10,8 +11,10 @@
 
 <script>
 import axios from '@/supports/axios'
+import UserTopics from '@/components/UserTopics'
 
 export default {
+  components: { UserTopics },
   name: 'user',
   data () {
     return {

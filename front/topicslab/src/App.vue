@@ -12,6 +12,7 @@
     <router-view/>
   </div>
   <small>© 2021 TopicsLab</small>
+
 </template>
 
 <script>
