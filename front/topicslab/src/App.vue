@@ -11,7 +11,7 @@
   <div class="content">
     <router-view/>
   </div>
-  <small>© 2021 TopicsLab</small>
+  <small>&copy; 2021 TopicsLab</small>
 
 </template>
 
