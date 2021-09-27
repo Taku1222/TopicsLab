@@ -2,7 +2,7 @@
   <div>
     <Card>
       <template #title>
-        mypage
+        マイページ
       </template>
       <template #content>
         {{user.name}}
