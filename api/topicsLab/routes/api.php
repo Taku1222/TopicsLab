@@ -57,3 +57,8 @@ Route::middleware('auth:sanctum')->get('/user/{user}', [
     App\Http\Controllers\UserController::class,
     'show'
 ]);
+
+Route::middleware('auth:sanctum')->delete('/withdraw', [
+    App\Http\Controllers\UserController::class,
+    'destroy'
+]);
