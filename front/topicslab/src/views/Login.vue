@@ -21,7 +21,7 @@
         </div>
       </template>
     </Card>
-    <router-link to="/register/">register</router-link>
+    <router-link to="/register/">会員登録はこちら</router-link>
   </div>
 </template>
 
