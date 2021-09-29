@@ -10,7 +10,6 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-
 class User extends Authenticatable
 {
     use HasApiTokens;
@@ -51,5 +50,10 @@ class User extends Authenticatable
     public function topics()
     {
         return $this->hasMany(Topic::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }

@@ -11,7 +11,7 @@
         <Button label="Create Topic" v-on:click="toNewTopic" />
         <Button label="Logout" class="p-button-warning" v-on:click="logout" />
         <Button label="Withdraw" class="p-button-danger" v-on:click="withdraw" />
-        <UserTopics />
+        <UserTopics :id="user.id"/>
       </template>
     </Card>
   </div>

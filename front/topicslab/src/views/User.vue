@@ -3,7 +3,7 @@
     <Card>
       <template #content>
         {{user.name}}
-        <UserTopics />
+        <UserTopics :id="user.id"/>
       </template>
     </Card>
   </div>
@@ -42,7 +42,7 @@ export default {
             .then((res) => {
               console.log(res)
               if (res.status === 200) {
-                this.user = res.data
+                this.user = res.data[0]
               } else {
                 console.log('取得失敗')
               }
