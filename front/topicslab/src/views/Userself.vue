@@ -2,15 +2,15 @@
   <div>
     <Card>
       <template #title>
-        mypage
+        マイページ
       </template>
       <template #content>
         {{user.name}}
       </template>
       <template #footer>
-        <Button label="Create Topic" v-on:click="toNewTopic" />
-        <Button label="Logout" class="p-button-warning" v-on:click="logout" />
-        <Button label="Withdraw" class="p-button-danger" v-on:click="withdraw" />
+        <Button label="トピック作成" v-on:click="toNewTopic" />
+        <Button label="ログアウト" class="p-button-warning" v-on:click="logout" />
+        <Button label="退会" class="p-button-danger" v-on:click="withdraw" />
         <UserTopics :id="user.id"/>
       </template>
     </Card>
