@@ -21,7 +21,7 @@
         </div>
       </template>
     </Card>
-    <router-link to="/register/">会員登録はこちらへ</router-link>
+    <router-link to="/register/">会員登録はこちら</router-link>
   </div>
 </template>
 
@@ -49,6 +49,7 @@ export default {
             .then((res) => {
               if (res.status === 200) {
                 console.log('ログイン成功')
+                this.$router.push('/')
                 localStorage.setItem('authenticated', 'true')
               } else {
                 this.message = 'ログインに失敗しました。'

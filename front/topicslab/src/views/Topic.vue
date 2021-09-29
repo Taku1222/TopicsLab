@@ -7,13 +7,13 @@
       <template #content>
         <div class="body-text">
           {{topic.body}}
-          <br>
-          <Button label="いいね" />
         </div>
       </template>
       <template #footer>
         <span>
           <router-link :to="`/user/${user.id}`">{{user.name}}</router-link>
+          <br>
+          <Button label="いいね" />
         </span>
       </template>
     </Card>

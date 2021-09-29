@@ -8,7 +8,9 @@
       </template>
       <div class="comment-text">
         {{comment.body}}
-        <Button label="いいね" />
+      </div>
+      <div class = "like_button">
+        <Button label = "いいね" />
       </div>
     </Fieldset>
   </div>
@@ -30,5 +32,10 @@ export default {
 
 .comment-text {
   white-space:pre-wrap;
+}
+
+.like_button {
+  text-align: right;
+  display: block;
 }
 </style>
